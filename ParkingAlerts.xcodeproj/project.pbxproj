@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D0F13F1F5E300857D7E /* UIKit.framework */; };
+		1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1113F1F5E300857D7E /* Foundation.framework */; };
+		1AE23D1413F1F5E300857D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */; };
+		1AE23D1613F1F5E300857D7E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1513F1F5E300857D7E /* CoreData.framework */; };
+		1AE23D1C13F1F5E300857D7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AE23D1A13F1F5E300857D7E /* InfoPlist.strings */; };
+		1AE23D1E13F1F5E300857D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE23D1D13F1F5E300857D7E /* main.m */; };
+		1AE23D2213F1F5E300857D7E /* ParkingAlertsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE23D2113F1F5E300857D7E /* ParkingAlertsAppDelegate.m */; };
+		1AE23D2513F1F5E300857D7E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE23D2313F1F5E300857D7E /* MainWindow.xib */; };
+		1AE23D2813F1F5E300857D7E /* ParkingAlerts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AE23D2613F1F5E300857D7E /* ParkingAlerts.xcdatamodeld */; };
+		1AE23D3013F1F5E300857D7E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D2F13F1F5E300857D7E /* SenTestingKit.framework */; };
+		1AE23D3113F1F5E300857D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D0F13F1F5E300857D7E /* UIKit.framework */; };
+		1AE23D3213F1F5E300857D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1113F1F5E300857D7E /* Foundation.framework */; };
+		1AE23D3313F1F5E300857D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */; };
+		1AE23D3413F1F5E300857D7E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1513F1F5E300857D7E /* CoreData.framework */; };
+		1AE23D3C13F1F5E300857D7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AE23D3A13F1F5E300857D7E /* InfoPlist.strings */; };
+		1AE23D3E13F1F5E300857D7E /* ParkingAlertsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1AE23D3D13F1F5E300857D7E /* ParkingAlertsTests.h */; };
+		1AE23D4013F1F5E300857D7E /* ParkingAlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE23D3F13F1F5E300857D7E /* ParkingAlertsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AE23D3513F1F5E300857D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AE23D0213F1F5E300857D7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AE23D0A13F1F5E300857D7E;
+			remoteInfo = ParkingAlerts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AE23D0B13F1F5E300857D7E /* ParkingAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE23D0F13F1F5E300857D7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1AE23D1113F1F5E300857D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AE23D1513F1F5E300857D7E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1AE23D1913F1F5E300857D7E /* ParkingAlerts-Info.plist */ = {isa = PBXFileReference; path = "ParkingAlerts-Info.plist"; sourceTree = "<group>"; };
+		1AE23D1B13F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AE23D1D13F1F5E300857D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AE23D1F13F1F5E300857D7E /* ParkingAlerts-Prefix.pch */ = {isa = PBXFileReference; path = "ParkingAlerts-Prefix.pch"; sourceTree = "<group>"; };
+		1AE23D2013F1F5E300857D7E /* ParkingAlertsAppDelegate.h */ = {isa = PBXFileReference; path = ParkingAlertsAppDelegate.h; sourceTree = "<group>"; };
+		1AE23D2113F1F5E300857D7E /* ParkingAlertsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingAlertsAppDelegate.m; sourceTree = "<group>"; };
+		1AE23D2413F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1AE23D2713F1F5E300857D7E /* ParkingAlerts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParkingAlerts.xcdatamodel; sourceTree = "<group>"; };
+		1AE23D2E13F1F5E300857D7E /* ParkingAlertsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingAlertsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE23D2F13F1F5E300857D7E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1AE23D3913F1F5E300857D7E /* ParkingAlertsTests-Info.plist */ = {isa = PBXFileReference; path = "ParkingAlertsTests-Info.plist"; sourceTree = "<group>"; };
+		1AE23D3B13F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AE23D3D13F1F5E300857D7E /* ParkingAlertsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParkingAlertsTests.h; sourceTree = "<group>"; };
+		1AE23D3F13F1F5E300857D7E /* ParkingAlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingAlertsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AE23D0813F1F5E300857D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */,
+				1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */,
+				1AE23D1413F1F5E300857D7E /* CoreGraphics.framework in Frameworks */,
+				1AE23D1613F1F5E300857D7E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE23D2A13F1F5E300857D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE23D3013F1F5E300857D7E /* SenTestingKit.framework in Frameworks */,
+				1AE23D3113F1F5E300857D7E /* UIKit.framework in Frameworks */,
+				1AE23D3213F1F5E300857D7E /* Foundation.framework in Frameworks */,
+				1AE23D3313F1F5E300857D7E /* CoreGraphics.framework in Frameworks */,
+				1AE23D3413F1F5E300857D7E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AE23D0013F1F5E300857D7E = {
+			isa = PBXGroup;
+			children = (
+				1AE23D1713F1F5E300857D7E /* ParkingAlerts */,
+				1AE23D3713F1F5E300857D7E /* ParkingAlertsTests */,
+				1AE23D0E13F1F5E300857D7E /* Frameworks */,
+				1AE23D0C13F1F5E300857D7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AE23D0C13F1F5E300857D7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D0B13F1F5E300857D7E /* ParkingAlerts.app */,
+				1AE23D2E13F1F5E300857D7E /* ParkingAlertsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AE23D0E13F1F5E300857D7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D0F13F1F5E300857D7E /* UIKit.framework */,
+				1AE23D1113F1F5E300857D7E /* Foundation.framework */,
+				1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */,
+				1AE23D1513F1F5E300857D7E /* CoreData.framework */,
+				1AE23D2F13F1F5E300857D7E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AE23D1713F1F5E300857D7E /* ParkingAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D2013F1F5E300857D7E /* ParkingAlertsAppDelegate.h */,
+				1AE23D2113F1F5E300857D7E /* ParkingAlertsAppDelegate.m */,
+				1AE23D2313F1F5E300857D7E /* MainWindow.xib */,
+				1AE23D2613F1F5E300857D7E /* ParkingAlerts.xcdatamodeld */,
+				1AE23D1813F1F5E300857D7E /* Supporting Files */,
+			);
+			path = ParkingAlerts;
+			sourceTree = "<group>";
+		};
+		1AE23D1813F1F5E300857D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D1913F1F5E300857D7E /* ParkingAlerts-Info.plist */,
+				1AE23D1A13F1F5E300857D7E /* InfoPlist.strings */,
+				1AE23D1D13F1F5E300857D7E /* main.m */,
+				1AE23D1F13F1F5E300857D7E /* ParkingAlerts-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE23D3713F1F5E300857D7E /* ParkingAlertsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D3D13F1F5E300857D7E /* ParkingAlertsTests.h */,
+				1AE23D3F13F1F5E300857D7E /* ParkingAlertsTests.m */,
+				1AE23D3813F1F5E300857D7E /* Supporting Files */,
+			);
+			path = ParkingAlertsTests;
+			sourceTree = "<group>";
+		};
+		1AE23D3813F1F5E300857D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D3913F1F5E300857D7E /* ParkingAlertsTests-Info.plist */,
+				1AE23D3A13F1F5E300857D7E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AE23D0A13F1F5E300857D7E /* ParkingAlerts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE23D4313F1F5E300857D7E /* Build configuration list for PBXNativeTarget "ParkingAlerts" */;
+			buildPhases = (
+				1AE23D0713F1F5E300857D7E /* Sources */,
+				1AE23D0813F1F5E300857D7E /* Frameworks */,
+				1AE23D0913F1F5E300857D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingAlerts;
+			productName = ParkingAlerts;
+			productReference = 1AE23D0B13F1F5E300857D7E /* ParkingAlerts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AE23D2D13F1F5E300857D7E /* ParkingAlertsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE23D4613F1F5E300857D7E /* Build configuration list for PBXNativeTarget "ParkingAlertsTests" */;
+			buildPhases = (
+				1AE23D2913F1F5E300857D7E /* Sources */,
+				1AE23D2A13F1F5E300857D7E /* Frameworks */,
+				1AE23D2B13F1F5E300857D7E /* Resources */,
+				1AE23D2C13F1F5E300857D7E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AE23D3613F1F5E300857D7E /* PBXTargetDependency */,
+			);
+			name = ParkingAlertsTests;
+			productName = ParkingAlertsTests;
+			productReference = 1AE23D2E13F1F5E300857D7E /* ParkingAlertsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AE23D0213F1F5E300857D7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Clickable Bliss";
+			};
+			buildConfigurationList = 1AE23D0513F1F5E300857D7E /* Build configuration list for PBXProject "ParkingAlerts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AE23D0013F1F5E300857D7E;
+			productRefGroup = 1AE23D0C13F1F5E300857D7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AE23D0A13F1F5E300857D7E /* ParkingAlerts */,
+				1AE23D2D13F1F5E300857D7E /* ParkingAlertsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AE23D0913F1F5E300857D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE23D1C13F1F5E300857D7E /* InfoPlist.strings in Resources */,
+				1AE23D2513F1F5E300857D7E /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE23D2B13F1F5E300857D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE23D3C13F1F5E300857D7E /* InfoPlist.strings in Resources */,
+				1AE23D3E13F1F5E300857D7E /* ParkingAlertsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AE23D2C13F1F5E300857D7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AE23D0713F1F5E300857D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE23D1E13F1F5E300857D7E /* main.m in Sources */,
+				1AE23D2213F1F5E300857D7E /* ParkingAlertsAppDelegate.m in Sources */,
+				1AE23D2813F1F5E300857D7E /* ParkingAlerts.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE23D2913F1F5E300857D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE23D4013F1F5E300857D7E /* ParkingAlertsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AE23D3613F1F5E300857D7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AE23D0A13F1F5E300857D7E /* ParkingAlerts */;
+			targetProxy = 1AE23D3513F1F5E300857D7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AE23D1A13F1F5E300857D7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AE23D1B13F1F5E300857D7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AE23D2313F1F5E300857D7E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AE23D2413F1F5E300857D7E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		1AE23D3A13F1F5E300857D7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AE23D3B13F1F5E300857D7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AE23D4113F1F5E300857D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1AE23D4213F1F5E300857D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AE23D4413F1F5E300857D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkingAlerts/ParkingAlerts-Prefix.pch";
+				INFOPLIST_FILE = "ParkingAlerts/ParkingAlerts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AE23D4513F1F5E300857D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkingAlerts/ParkingAlerts-Prefix.pch";
+				INFOPLIST_FILE = "ParkingAlerts/ParkingAlerts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1AE23D4713F1F5E300857D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParkingAlerts.app/ParkingAlerts";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkingAlerts/ParkingAlerts-Prefix.pch";
+				INFOPLIST_FILE = "ParkingAlertsTests/ParkingAlertsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1AE23D4813F1F5E300857D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParkingAlerts.app/ParkingAlerts";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkingAlerts/ParkingAlerts-Prefix.pch";
+				INFOPLIST_FILE = "ParkingAlertsTests/ParkingAlertsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AE23D0513F1F5E300857D7E /* Build configuration list for PBXProject "ParkingAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE23D4113F1F5E300857D7E /* Debug */,
+				1AE23D4213F1F5E300857D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE23D4313F1F5E300857D7E /* Build configuration list for PBXNativeTarget "ParkingAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE23D4413F1F5E300857D7E /* Debug */,
+				1AE23D4513F1F5E300857D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AE23D4613F1F5E300857D7E /* Build configuration list for PBXNativeTarget "ParkingAlertsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE23D4713F1F5E300857D7E /* Debug */,
+				1AE23D4813F1F5E300857D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AE23D2613F1F5E300857D7E /* ParkingAlerts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AE23D2713F1F5E300857D7E /* ParkingAlerts.xcdatamodel */,
+			);
+			currentVersion = 1AE23D2713F1F5E300857D7E /* ParkingAlerts.xcdatamodel */;
+			path = ParkingAlerts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1AE23D0213F1F5E300857D7E /* Project object */;
+}
