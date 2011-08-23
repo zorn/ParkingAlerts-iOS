@@ -1,0 +1,11 @@
+#list submodules
+git submodule
+
+# add a submodule
+git submodule add git@github.com:zorn/MagicalRecord.git Submodules/MagicalRecord
+
+#init
+git submodule init Submodules/MagicalRecord
+
+# update after a fresh parent clone
+git submodule update hocus
