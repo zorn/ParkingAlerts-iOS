@@ -1,0 +1,66 @@
+<mockup version="1.0" skin="sketch" measuredW="707" measuredH="801" mockupW="517" mockupH="510">
+  <controls>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::iPhone" x="190" y="291" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlackBottom</bgPattern>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Map" x="218" y="430" w="224" h="241" measuredW="252" measuredH="222" zOrder="1" locked="true" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::IconLabel" x="257" y="677" w="-1" h="-1" measuredW="31" measuredH="37" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <icon>DeliciousIcon%7Cxsmall</icon>
+        <text>Map</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::VRule" x="328" y="671" w="-1" h="43" measuredW="5" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::IconLabel" x="371" y="676" w="-1" h="-1" measuredW="28" measuredH="37" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>ListIcon%7Cxsmall</icon>
+        <text>List</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Component" x="230" y="581" w="12" h="23" measuredW="12" measuredH="23" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../Downloads/MapControls/assets/symbols.bmml#Map%20Pin%20Simple</src>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Component" x="426" y="562" w="12" h="23" measuredW="12" measuredH="23" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="2" y="6" w="5" h="17"/>
+        <override controlID="1" x="0" y="0" w="12" h="12"/>
+        <src>../../../../Downloads/MapControls/assets/symbols.bmml#Map%20Pin%20Simple</src>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Component" x="323" y="604" w="12" h="23" measuredW="12" measuredH="23" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="2" y="6" w="5" h="17"/>
+        <override controlID="1" x="0" y="0" w="12" h="12"/>
+        <src>../../../../Downloads/MapControls/assets/symbols.bmml#Map%20Pin%20Simple</src>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::SubTitle" x="230" y="397" w="-1" h="-1" measuredW="140" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>20</size>
+        <text>Parking%20Alerts</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::PointyButton" x="371" y="396" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <text>My%20Car</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::StickyNote" x="487" y="307" w="220" h="386" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>From%20this%20view%20you%20get%20an%20visual%20overview%20of%20the%20current%20alerts.%0A%20%0AHitting%20My%20Car%20will%20let%20you%20edit%20the%20current%20location%20of%20your%20car.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
