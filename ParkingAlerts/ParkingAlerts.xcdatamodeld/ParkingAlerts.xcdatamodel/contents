@@ -22,7 +22,7 @@
     </entity>
     <elements>
         <element name="Location" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="Alert" positionX="387" positionY="171" width="128" height="165"/>
+        <element name="Alert" positionX="387" positionY="132" width="128" height="165"/>
         <element name="Car" positionX="-54" positionY="237" width="128" height="60"/>
     </elements>
 </model>

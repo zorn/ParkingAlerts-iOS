@@ -11,13 +11,14 @@
 @implementation ParkingAlertsAppDelegate
 
 @synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +62,7 @@
 - (void)dealloc
 {
     [_window release];
+    [_tabBarController release];
     [__managedObjectContext release];
     [__managedObjectModel release];
     [__persistentStoreCoordinator release];

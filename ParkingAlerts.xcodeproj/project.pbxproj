@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A549276140405280064D95A /* AlertMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A549274140405280064D95A /* AlertMapViewController.m */; };
+		1A549277140405280064D95A /* AlertMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A549275140405280064D95A /* AlertMapView.xib */; };
+		1A54927F1404073F0064D95A /* AlertListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A54927D1404073F0064D95A /* AlertListViewController.m */; };
+		1A5492801404073F0064D95A /* AlertListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A54927E1404073F0064D95A /* AlertListView.xib */; };
+		1A5492BB14040BA80064D95A /* index-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5492B714040BA80064D95A /* index-cards.png */; };
+		1A5492BC14040BA80064D95A /* index-cards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5492B814040BA80064D95A /* index-cards@2x.png */; };
+		1A5492BD14040BA80064D95A /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5492B914040BA80064D95A /* map.png */; };
+		1A5492BE14040BA80064D95A /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5492BA14040BA80064D95A /* map@2x.png */; };
+		1A5492C014040D710064D95A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5492BF14040D710064D95A /* MapKit.framework */; };
 		1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D0F13F1F5E300857D7E /* UIKit.framework */; };
 		1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1113F1F5E300857D7E /* Foundation.framework */; };
 		1AE23D1413F1F5E300857D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */; };
@@ -37,22 +46,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A549273140405280064D95A /* AlertMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertMapViewController.h; path = Source/AlertMapViewController.h; sourceTree = "<group>"; };
+		1A549274140405280064D95A /* AlertMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertMapViewController.m; path = Source/AlertMapViewController.m; sourceTree = "<group>"; };
+		1A549275140405280064D95A /* AlertMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertMapView.xib; path = Source/AlertMapView.xib; sourceTree = "<group>"; };
+		1A54927C1404073F0064D95A /* AlertListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertListViewController.h; path = Source/AlertListViewController.h; sourceTree = "<group>"; };
+		1A54927D1404073F0064D95A /* AlertListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertListViewController.m; path = Source/AlertListViewController.m; sourceTree = "<group>"; };
+		1A54927E1404073F0064D95A /* AlertListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertListView.xib; path = Source/AlertListView.xib; sourceTree = "<group>"; };
+		1A5492B714040BA80064D95A /* index-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index-cards.png"; sourceTree = "<group>"; };
+		1A5492B814040BA80064D95A /* index-cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index-cards@2x.png"; sourceTree = "<group>"; };
+		1A5492B914040BA80064D95A /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		1A5492BA14040BA80064D95A /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		1A5492BF14040D710064D95A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1AE23D0B13F1F5E300857D7E /* ParkingAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE23D0F13F1F5E300857D7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AE23D1113F1F5E300857D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1AE23D1513F1F5E300857D7E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1AE23D1913F1F5E300857D7E /* ParkingAlerts-Info.plist */ = {isa = PBXFileReference; path = "ParkingAlerts-Info.plist"; sourceTree = "<group>"; };
+		1AE23D1913F1F5E300857D7E /* ParkingAlerts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkingAlerts-Info.plist"; sourceTree = "<group>"; };
 		1AE23D1B13F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AE23D1D13F1F5E300857D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AE23D1F13F1F5E300857D7E /* ParkingAlerts-Prefix.pch */ = {isa = PBXFileReference; path = "ParkingAlerts-Prefix.pch"; sourceTree = "<group>"; };
-		1AE23D2013F1F5E300857D7E /* ParkingAlertsAppDelegate.h */ = {isa = PBXFileReference; path = ParkingAlertsAppDelegate.h; sourceTree = "<group>"; };
+		1AE23D1F13F1F5E300857D7E /* ParkingAlerts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParkingAlerts-Prefix.pch"; sourceTree = "<group>"; };
+		1AE23D2013F1F5E300857D7E /* ParkingAlertsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParkingAlertsAppDelegate.h; sourceTree = "<group>"; };
 		1AE23D2113F1F5E300857D7E /* ParkingAlertsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingAlertsAppDelegate.m; sourceTree = "<group>"; };
 		1AE23D2413F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		1AE23D2713F1F5E300857D7E /* ParkingAlerts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParkingAlerts.xcdatamodel; sourceTree = "<group>"; };
 		1AE23D2E13F1F5E300857D7E /* ParkingAlertsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingAlertsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE23D2F13F1F5E300857D7E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1AE23D3913F1F5E300857D7E /* ParkingAlertsTests-Info.plist */ = {isa = PBXFileReference; path = "ParkingAlertsTests-Info.plist"; sourceTree = "<group>"; };
+		1AE23D3913F1F5E300857D7E /* ParkingAlertsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkingAlertsTests-Info.plist"; sourceTree = "<group>"; };
 		1AE23D3B13F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AE23D3D13F1F5E300857D7E /* ParkingAlertsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParkingAlertsTests.h; sourceTree = "<group>"; };
 		1AE23D3F13F1F5E300857D7E /* ParkingAlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingAlertsTests.m; sourceTree = "<group>"; };
@@ -63,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5492C014040D710064D95A /* MapKit.framework in Frameworks */,
 				1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */,
 				1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */,
 				1AE23D1413F1F5E300857D7E /* CoreGraphics.framework in Frameworks */,
@@ -85,6 +106,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A549270140404A40064D95A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D2013F1F5E300857D7E /* ParkingAlertsAppDelegate.h */,
+				1AE23D2113F1F5E300857D7E /* ParkingAlertsAppDelegate.m */,
+				1AE23D2313F1F5E300857D7E /* MainWindow.xib */,
+				1A549273140405280064D95A /* AlertMapViewController.h */,
+				1A549274140405280064D95A /* AlertMapViewController.m */,
+				1A549275140405280064D95A /* AlertMapView.xib */,
+				1A54927C1404073F0064D95A /* AlertListViewController.h */,
+				1A54927D1404073F0064D95A /* AlertListViewController.m */,
+				1A54927E1404073F0064D95A /* AlertListView.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1A549272140404BF0064D95A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1AE23D2613F1F5E300857D7E /* ParkingAlerts.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1A5492B614040BA80064D95A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1A5492B714040BA80064D95A /* index-cards.png */,
+				1A5492B814040BA80064D95A /* index-cards@2x.png */,
+				1A5492B914040BA80064D95A /* map.png */,
+				1A5492BA14040BA80064D95A /* map@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		1AE23D0013F1F5E300857D7E = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +163,7 @@
 		1AE23D0E13F1F5E300857D7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A5492BF14040D710064D95A /* MapKit.framework */,
 				1AE23D0F13F1F5E300857D7E /* UIKit.framework */,
 				1AE23D1113F1F5E300857D7E /* Foundation.framework */,
 				1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */,
@@ -119,10 +176,9 @@
 		1AE23D1713F1F5E300857D7E /* ParkingAlerts */ = {
 			isa = PBXGroup;
 			children = (
-				1AE23D2013F1F5E300857D7E /* ParkingAlertsAppDelegate.h */,
-				1AE23D2113F1F5E300857D7E /* ParkingAlertsAppDelegate.m */,
-				1AE23D2313F1F5E300857D7E /* MainWindow.xib */,
-				1AE23D2613F1F5E300857D7E /* ParkingAlerts.xcdatamodeld */,
+				1A5492B614040BA80064D95A /* Images */,
+				1A549272140404BF0064D95A /* Models */,
+				1A549270140404A40064D95A /* Controllers */,
 				1AE23D1813F1F5E300857D7E /* Supporting Files */,
 			);
 			path = ParkingAlerts;
@@ -230,6 +286,12 @@
 			files = (
 				1AE23D1C13F1F5E300857D7E /* InfoPlist.strings in Resources */,
 				1AE23D2513F1F5E300857D7E /* MainWindow.xib in Resources */,
+				1A549277140405280064D95A /* AlertMapView.xib in Resources */,
+				1A5492801404073F0064D95A /* AlertListView.xib in Resources */,
+				1A5492BB14040BA80064D95A /* index-cards.png in Resources */,
+				1A5492BC14040BA80064D95A /* index-cards@2x.png in Resources */,
+				1A5492BD14040BA80064D95A /* map.png in Resources */,
+				1A5492BE14040BA80064D95A /* map@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +330,8 @@
 				1AE23D1E13F1F5E300857D7E /* main.m in Sources */,
 				1AE23D2213F1F5E300857D7E /* ParkingAlertsAppDelegate.m in Sources */,
 				1AE23D2813F1F5E300857D7E /* ParkingAlerts.xcdatamodeld in Sources */,
+				1A549276140405280064D95A /* AlertMapViewController.m in Sources */,
+				1A54927F1404073F0064D95A /* AlertListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +499,7 @@
 				1AE23D4513F1F5E300857D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AE23D4613F1F5E300857D7E /* Build configuration list for PBXNativeTarget "ParkingAlertsTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +508,7 @@
 				1AE23D4813F1F5E300857D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
