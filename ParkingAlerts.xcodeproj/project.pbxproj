@@ -24,6 +24,10 @@
 		1A760EA6140417B800B2AB5E /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760E9B140417B800B2AB5E /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
 		1A760EA7140417B800B2AB5E /* MagicalRecordHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760E9E140417B800B2AB5E /* MagicalRecordHelpers.m */; };
 		1A760EA8140417B800B2AB5E /* MRCoreDataAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760EA0140417B800B2AB5E /* MRCoreDataAction.m */; };
+		1A760EB014041C5400B2AB5E /* PAAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760EAF14041C5400B2AB5E /* PAAlert.m */; };
+		1A760EB314041C9700B2AB5E /* PACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760EB214041C9700B2AB5E /* PACar.m */; };
+		1A760EB614041CAB00B2AB5E /* PALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760EB514041CAB00B2AB5E /* PALocation.m */; };
+		1A760EB814041EF500B2AB5E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A760EB714041EF500B2AB5E /* CoreLocation.framework */; };
 		1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D0F13F1F5E300857D7E /* UIKit.framework */; };
 		1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1113F1F5E300857D7E /* Foundation.framework */; };
 		1AE23D1413F1F5E300857D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */; };
@@ -82,6 +86,13 @@
 		1A760E9E140417B800B2AB5E /* MagicalRecordHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordHelpers.m; path = Submodules/MagicalRecord/Source/MagicalRecordHelpers.m; sourceTree = SOURCE_ROOT; };
 		1A760E9F140417B800B2AB5E /* MRCoreDataAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRCoreDataAction.h; path = Submodules/MagicalRecord/Source/MRCoreDataAction.h; sourceTree = SOURCE_ROOT; };
 		1A760EA0140417B800B2AB5E /* MRCoreDataAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRCoreDataAction.m; path = Submodules/MagicalRecord/Source/MRCoreDataAction.m; sourceTree = SOURCE_ROOT; };
+		1A760EAE14041C5400B2AB5E /* PAAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAAlert.h; path = Source/PAAlert.h; sourceTree = "<group>"; };
+		1A760EAF14041C5400B2AB5E /* PAAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAAlert.m; path = Source/PAAlert.m; sourceTree = "<group>"; };
+		1A760EB114041C9700B2AB5E /* PACar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PACar.h; path = Source/PACar.h; sourceTree = "<group>"; };
+		1A760EB214041C9700B2AB5E /* PACar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PACar.m; path = Source/PACar.m; sourceTree = "<group>"; };
+		1A760EB414041CAB00B2AB5E /* PALocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PALocation.h; path = Source/PALocation.h; sourceTree = "<group>"; };
+		1A760EB514041CAB00B2AB5E /* PALocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PALocation.m; path = Source/PALocation.m; sourceTree = "<group>"; };
+		1A760EB714041EF500B2AB5E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1AE23D0B13F1F5E300857D7E /* ParkingAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE23D0F13F1F5E300857D7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AE23D1113F1F5E300857D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A760EB814041EF500B2AB5E /* CoreLocation.framework in Frameworks */,
 				1A5492C014040D710064D95A /* MapKit.framework in Frameworks */,
 				1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */,
 				1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */,
@@ -151,6 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				1AE23D2613F1F5E300857D7E /* ParkingAlerts.xcdatamodeld */,
+				1A760EB414041CAB00B2AB5E /* PALocation.h */,
+				1A760EB514041CAB00B2AB5E /* PALocation.m */,
+				1A760EB114041C9700B2AB5E /* PACar.h */,
+				1A760EB214041C9700B2AB5E /* PACar.m */,
+				1A760EAE14041C5400B2AB5E /* PAAlert.h */,
+				1A760EAF14041C5400B2AB5E /* PAAlert.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -221,6 +239,7 @@
 		1AE23D0E13F1F5E300857D7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A760EB714041EF500B2AB5E /* CoreLocation.framework */,
 				1A5492BF14040D710064D95A /* MapKit.framework */,
 				1AE23D0F13F1F5E300857D7E /* UIKit.framework */,
 				1AE23D1113F1F5E300857D7E /* Foundation.framework */,
@@ -399,6 +418,9 @@
 				1A760EA6140417B800B2AB5E /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				1A760EA7140417B800B2AB5E /* MagicalRecordHelpers.m in Sources */,
 				1A760EA8140417B800B2AB5E /* MRCoreDataAction.m in Sources */,
+				1A760EB014041C5400B2AB5E /* PAAlert.m in Sources */,
+				1A760EB314041C9700B2AB5E /* PACar.m in Sources */,
+				1A760EB614041CAB00B2AB5E /* PALocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

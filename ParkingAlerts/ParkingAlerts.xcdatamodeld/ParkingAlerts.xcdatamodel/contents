@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Alert">
+    <entity name="Alert" representedClassName="PAAlert">
         <attribute name="endsOn" optional="YES" attributeType="Date"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="note" optional="YES" attributeType="String"/>
@@ -10,10 +10,10 @@
         <relationship name="endLocation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="endLocationOfAlert" inverseEntity="Location"/>
         <relationship name="startLocation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="startLocationOfAlert" inverseEntity="Location"/>
     </entity>
-    <entity name="Car">
+    <entity name="Car" representedClassName="PACar">
         <relationship name="location" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="ofCar" inverseEntity="Location"/>
     </entity>
-    <entity name="Location">
+    <entity name="Location" representedClassName="PALocation">
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0"/>
         <relationship name="endLocationOfAlert" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Alert" inverseName="endLocation" inverseEntity="Alert"/>
@@ -21,8 +21,8 @@
         <relationship name="startLocationOfAlert" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Alert" inverseName="startLocation" inverseEntity="Alert"/>
     </entity>
     <elements>
-        <element name="Location" positionX="160" positionY="192" width="128" height="120"/>
         <element name="Alert" positionX="387" positionY="132" width="128" height="165"/>
         <element name="Car" positionX="-54" positionY="237" width="128" height="60"/>
+        <element name="Location" positionX="160" positionY="192" width="128" height="120"/>
     </elements>
 </model>
