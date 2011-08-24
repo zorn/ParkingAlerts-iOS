@@ -23,6 +23,7 @@
 @end
 
 @interface ParkingAlertsAppDelegate (Private)
-- (void)buildDefaultCarIfNeeded;
+- (void)buildCoreDataStack;
+- (void)assignUserCar;
 - (void)startStandardLocationUpdates;
 @end

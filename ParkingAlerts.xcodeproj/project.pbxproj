@@ -37,6 +37,13 @@
 		1AE23D3C13F1F5E300857D7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AE23D3A13F1F5E300857D7E /* InfoPlist.strings */; };
 		1AE23D3E13F1F5E300857D7E /* ParkingAlertsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1AE23D3D13F1F5E300857D7E /* ParkingAlertsTests.h */; };
 		1AE23D4013F1F5E300857D7E /* ParkingAlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE23D3F13F1F5E300857D7E /* ParkingAlertsTests.m */; };
+		1AEC31651405407600CAF9F0 /* ActiveRecordHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31571405407600CAF9F0 /* ActiveRecordHelpers.m */; };
+		1AEC31661405407600CAF9F0 /* ARCoreDataAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31591405407600CAF9F0 /* ARCoreDataAction.m */; };
+		1AEC31671405407600CAF9F0 /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC315C1405407600CAF9F0 /* NSManagedObject+ActiveRecord.m */; };
+		1AEC31681405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC315E1405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.m */; };
+		1AEC31691405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31601405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m */; };
+		1AEC316A1405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31621405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m */; };
+		1AEC316B1405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31641405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +94,21 @@
 		1AE23D3B13F1F5E300857D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AE23D3D13F1F5E300857D7E /* ParkingAlertsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParkingAlertsTests.h; sourceTree = "<group>"; };
 		1AE23D3F13F1F5E300857D7E /* ParkingAlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingAlertsTests.m; sourceTree = "<group>"; };
+		1AEC31561405407600CAF9F0 /* ActiveRecordHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActiveRecordHelpers.h; path = ThirdPartySource/MagicalRecord/ActiveRecordHelpers.h; sourceTree = "<group>"; };
+		1AEC31571405407600CAF9F0 /* ActiveRecordHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActiveRecordHelpers.m; path = ThirdPartySource/MagicalRecord/ActiveRecordHelpers.m; sourceTree = "<group>"; };
+		1AEC31581405407600CAF9F0 /* ARCoreDataAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCoreDataAction.h; path = ThirdPartySource/MagicalRecord/ARCoreDataAction.h; sourceTree = "<group>"; };
+		1AEC31591405407600CAF9F0 /* ARCoreDataAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARCoreDataAction.m; path = ThirdPartySource/MagicalRecord/ARCoreDataAction.m; sourceTree = "<group>"; };
+		1AEC315A1405407600CAF9F0 /* CoreData+ActiveRecordFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CoreData+ActiveRecordFetching.h"; path = "ThirdPartySource/MagicalRecord/CoreData+ActiveRecordFetching.h"; sourceTree = "<group>"; };
+		1AEC315B1405407600CAF9F0 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+ActiveRecord.h"; path = "ThirdPartySource/MagicalRecord/NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		1AEC315C1405407600CAF9F0 /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		1AEC315D1405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+ActiveRecord.h"; path = "ThirdPartySource/MagicalRecord/NSManagedObjectContext+ActiveRecord.h"; sourceTree = "<group>"; };
+		1AEC315E1405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSManagedObjectContext+ActiveRecord.m"; sourceTree = "<group>"; };
+		1AEC315F1405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+ActiveRecord.h"; path = "ThirdPartySource/MagicalRecord/NSManagedObjectModel+ActiveRecord.h"; sourceTree = "<group>"; };
+		1AEC31601405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSManagedObjectModel+ActiveRecord.m"; sourceTree = "<group>"; };
+		1AEC31611405407600CAF9F0 /* NSPersistentStore+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+ActiveRecord.h"; path = "ThirdPartySource/MagicalRecord/NSPersistentStore+ActiveRecord.h"; sourceTree = "<group>"; };
+		1AEC31621405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSPersistentStore+ActiveRecord.m"; sourceTree = "<group>"; };
+		1AEC31631405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+ActiveRecord.h"; path = "ThirdPartySource/MagicalRecord/NSPersistentStoreCoordinator+ActiveRecord.h"; sourceTree = "<group>"; };
+		1AEC31641405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSPersistentStoreCoordinator+ActiveRecord.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +184,21 @@
 		1A760EAA140417BD00B2AB5E /* MagicalRecord */ = {
 			isa = PBXGroup;
 			children = (
+				1AEC31561405407600CAF9F0 /* ActiveRecordHelpers.h */,
+				1AEC31571405407600CAF9F0 /* ActiveRecordHelpers.m */,
+				1AEC31581405407600CAF9F0 /* ARCoreDataAction.h */,
+				1AEC31591405407600CAF9F0 /* ARCoreDataAction.m */,
+				1AEC315A1405407600CAF9F0 /* CoreData+ActiveRecordFetching.h */,
+				1AEC315B1405407600CAF9F0 /* NSManagedObject+ActiveRecord.h */,
+				1AEC315C1405407600CAF9F0 /* NSManagedObject+ActiveRecord.m */,
+				1AEC315D1405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.h */,
+				1AEC315E1405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.m */,
+				1AEC315F1405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.h */,
+				1AEC31601405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m */,
+				1AEC31611405407600CAF9F0 /* NSPersistentStore+ActiveRecord.h */,
+				1AEC31621405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m */,
+				1AEC31631405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.h */,
+				1AEC31641405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m */,
 			);
 			name = MagicalRecord;
 			sourceTree = "<group>";
@@ -362,6 +399,13 @@
 				1A760EB014041C5400B2AB5E /* PAAlert.m in Sources */,
 				1A760EB314041C9700B2AB5E /* PACar.m in Sources */,
 				1A760EB614041CAB00B2AB5E /* PALocation.m in Sources */,
+				1AEC31651405407600CAF9F0 /* ActiveRecordHelpers.m in Sources */,
+				1AEC31661405407600CAF9F0 /* ARCoreDataAction.m in Sources */,
+				1AEC31671405407600CAF9F0 /* NSManagedObject+ActiveRecord.m in Sources */,
+				1AEC31681405407600CAF9F0 /* NSManagedObjectContext+ActiveRecord.m in Sources */,
+				1AEC31691405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m in Sources */,
+				1AEC316A1405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m in Sources */,
+				1AEC316B1405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

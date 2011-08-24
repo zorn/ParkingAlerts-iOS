@@ -9,8 +9,21 @@
 #import "PACar.h"
 #import "PALocation.h"
 
+#define PACarEntityName @"Car"
 
 @implementation PACar
 @dynamic location;
+
++ (id)insertInManagedObjectContext:(NSManagedObjectContext*)context
+{
+    NSParameterAssert(context);
+    return [NSEntityDescription insertNewObjectForEntityForName:PACarEntityName inManagedObjectContext:context];
+}
+
++ (NSEntityDescription *)entityInManagedObjectContext:(NSManagedObjectContext *)context
+{
+    return [NSEntityDescription entityForName:PACarEntityName inManagedObjectContext:context];
+}
+
 
 @end

@@ -18,7 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self buildDefaultCarIfNeeded];
+    [self buildCoreDataStack];
+    [self assignUserCar];
+    [self startStandardLocationUpdates];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
@@ -27,7 +29,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    //TODO: Add save
+    [[NSManagedObjectContext defaultContext] save];
 }
 
 - (void)dealloc
@@ -39,14 +41,31 @@
 }
 
 #pragma mark -
+#pragma mark Core Data Methods
+
+- (void)buildCoreDataStack
+{
+    NSManagedObjectModel *model = [NSManagedObjectModel managedObjectModelNamed:@"ParkingAlerts.momd"];
+    [NSManagedObjectModel setDefaultManagedObjectModel:model];
+    
+    NSPersistentStoreCoordinator *prc = [NSPersistentStoreCoordinator coordinatorWithSqliteStoreNamed:@"ProfitTrainCoreData.sqlite"];
+    [NSPersistentStoreCoordinator setDefaultStoreCoordinator:prc];
+    
+    [ActiveRecordHelpers setupCoreDataStack];
+}
+
+#pragma mark -
 #pragma mark Setup Data
 
-- (void)buildDefaultCarIfNeeded
+- (void)assignUserCar
 {
-    NSAssert([[PACar numberOfEntities] integerValue] > 1, @"Shouldn't ever be more than one car.");
     if ([[PACar numberOfEntities] integerValue] == 0) {
         self.userCar = [PACar createEntity];
         [self startStandardLocationUpdates];
+    } else {
+        NSArray *allCars = [PACar findAll];
+        NSAssert(allCars.count == 1, @"Found more than one car.");
+        self.userCar = [allCars lastObject];
     }
 }
 
@@ -70,12 +89,15 @@
     // If it's a relatively recent event, turn off updates to save power
     NSDate* eventDate = newLocation.timestamp;
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    if (abs(howRecent) < 15.0)
-    {
-        NSLog(@"latitude %+.6f, longitude %+.6f\n",
-              newLocation.coordinate.latitude,
-              newLocation.coordinate.longitude);
-    }
+    NSLog(@"latitude %+.6f, longitude %+.6f, %@, %f",
+          newLocation.coordinate.latitude,
+          newLocation.coordinate.longitude,
+          eventDate,
+          howRecent);
+    //    if (abs(howRecent) < 15.0)
+//    {
+//        
+//    }
     // else skip the event and process the next one.
 }
 
@@ -85,3 +107,29 @@
 }
 
 @end
+
+
+
+
+#if TARGET_IPHONE_SIMULATOR 
+
+// Patching CLLocationManager to do something useful in the Xcode 4.1 / iOS 4.3 Simulator
+// https://devforums.apple.com/thread/112805?start=0&tstart=0
+
+@interface CLLocationManager (Simulator)
+@end
+
+@implementation CLLocationManager (Simulator)
+
+-(void)startUpdatingLocation {
+    //Washington Monument:
+    CLLocation *fakeLocation = [[[CLLocation alloc] initWithLatitude:38.890164 longitude:-77.034588] autorelease];
+    
+    [self.delegate locationManager:self
+               didUpdateToLocation:fakeLocation
+                      fromLocation:fakeLocation];    
+}
+
+@end
+
+#endif // TARGET_IPHONE_SIMULATOR
