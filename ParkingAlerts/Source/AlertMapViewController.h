@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+
+@class PACar;
 
 @interface AlertMapViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (retain) PACar *userCar;
+
 
 @end

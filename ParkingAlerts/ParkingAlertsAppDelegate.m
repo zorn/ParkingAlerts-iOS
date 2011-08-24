@@ -8,14 +8,18 @@
 
 #import "ParkingAlertsAppDelegate.h"
 #import "PACar.h"
+#import "PALocation.h"
 #import "CarLocationController.h"
+#import "AlertMapViewController.h"
 
 @implementation ParkingAlertsAppDelegate
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
+@synthesize alertMapViewController=_alertMapViewController;
 @synthesize userCar=_userCar;
 @synthesize carLocationController=_carLocationController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -37,6 +41,7 @@
 {
     [_window release];
     [_tabBarController release];
+    [_alertMapViewController release];
     [_userCar release];
     [_carLocationController release];
     [super dealloc];
@@ -78,6 +83,8 @@
     if (autoLocateNewCarBasedOnCurrentLocation) {
         [self.carLocationController updateCarWithCurrentLocation];
     }
+    
+    self.alertMapViewController.userCar = self.userCar;
 }
 
 @end

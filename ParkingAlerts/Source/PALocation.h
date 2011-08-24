@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <MapKit/MapKit.h>
 
 @class PAAlert, PACar;
 
-@interface PALocation : NSManagedObject {
+@interface PALocation : NSManagedObject <MKAnnotation>
+{
 @private
+    
 }
 @property (nonatomic, retain) NSNumber *latitudeAsNumber;
 @property (nonatomic, retain) NSNumber *longitudeAsNumber;
@@ -24,5 +27,10 @@
 - (void)setLatitude:(double)newValue;
 - (double)longitude;
 - (void)setLongitude:(double)newValue;
+
+- (CLLocationCoordinate2D)coordinate;
+- (void)setCoordinate:(CLLocationCoordinate2D)newCoord;
+- (NSString *)title;
+- (NSString *)subtitle;
 
 @end

@@ -10,11 +10,13 @@
 
 @class PACar;
 @class CarLocationController;
+@class AlertMapViewController;
 
 @interface ParkingAlertsAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet AlertMapViewController *alertMapViewController;
 
 @property (retain) PACar *userCar;
 @property (retain) CarLocationController *carLocationController;
