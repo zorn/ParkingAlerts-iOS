@@ -25,5 +25,13 @@
     return [NSEntityDescription entityForName:PACarEntityName inManagedObjectContext:context];
 }
 
+- (void)awakeFromInsert
+{
+	[super awakeFromInsert];
+	    
+    PALocation *location = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:self.managedObjectContext];
+    self.location = location;
+}
+
 
 @end

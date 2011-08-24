@@ -7,23 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 
 @class PACar;
-@class CLLocationManager;
+@class CarLocationController;
 
-@interface ParkingAlertsAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate>
+@interface ParkingAlertsAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @property (retain) PACar *userCar;
-@property (retain) CLLocationManager *locationManager;
+@property (retain) CarLocationController *carLocationController;
 
 @end
 
 @interface ParkingAlertsAppDelegate (Private)
 - (void)buildCoreDataStack;
 - (void)assignUserCar;
-- (void)startStandardLocationUpdates;
 @end

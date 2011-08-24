@@ -14,10 +14,15 @@
 @interface PALocation : NSManagedObject {
 @private
 }
-@property (nonatomic) float latitude;
-@property (nonatomic) float longitude;
+@property (nonatomic, retain) NSNumber *latitudeAsNumber;
+@property (nonatomic, retain) NSNumber *longitudeAsNumber;
 @property (nonatomic, retain) PAAlert *endLocationOfAlert;
 @property (nonatomic, retain) PACar *ofCar;
 @property (nonatomic, retain) PAAlert *startLocationOfAlert;
+
+- (double)latitude;
+- (void)setLatitude:(double)newValue;
+- (double)longitude;
+- (void)setLongitude:(double)newValue;
 
 @end

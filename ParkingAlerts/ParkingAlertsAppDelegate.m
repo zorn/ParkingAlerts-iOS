@@ -8,20 +8,21 @@
 
 #import "ParkingAlertsAppDelegate.h"
 #import "PACar.h"
+#import "CarLocationController.h"
 
 @implementation ParkingAlertsAppDelegate
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 @synthesize userCar=_userCar;
-@synthesize locationManager=_locationManager;
+@synthesize carLocationController=_carLocationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self buildCoreDataStack];
+    self.carLocationController = [[CarLocationController alloc] init];
     [self assignUserCar];
-    [self startStandardLocationUpdates];
-    
+        
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -37,8 +38,12 @@
     [_window release];
     [_tabBarController release];
     [_userCar release];
+    [_carLocationController release];
     [super dealloc];
 }
+
+#pragma mark -
+#pragma mark Accessors Methods
 
 #pragma mark -
 #pragma mark Core Data Methods
@@ -59,77 +64,25 @@
 
 - (void)assignUserCar
 {
+    BOOL autoLocateNewCarBasedOnCurrentLocation = NO;
     if ([[PACar numberOfEntities] integerValue] == 0) {
         self.userCar = [PACar createEntity];
-        [self startStandardLocationUpdates];
+        autoLocateNewCarBasedOnCurrentLocation = YES;
     } else {
         NSArray *allCars = [PACar findAll];
         NSAssert(allCars.count == 1, @"Found more than one car.");
         self.userCar = [allCars lastObject];
     }
-}
-
-- (void)startStandardLocationUpdates
-{
-    // Create the location manager if this object does not
-    // already have one.
-    if (nil == self.locationManager) {
-        self.locationManager = [[CLLocationManager alloc] init];
-    }
-    self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [self.locationManager startUpdatingLocation];
-}
-
-#pragma mark -
-#pragma mark CLLocationManagerDelegate methods
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
-{
-    // If it's a relatively recent event, turn off updates to save power
-    NSDate* eventDate = newLocation.timestamp;
-    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    NSLog(@"latitude %+.6f, longitude %+.6f, %@, %f",
-          newLocation.coordinate.latitude,
-          newLocation.coordinate.longitude,
-          eventDate,
-          howRecent);
-    //    if (abs(howRecent) < 15.0)
-//    {
-//        
-//    }
-    // else skip the event and process the next one.
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    NSLog(@"locationManager %@ didFailWithError %@", manager, error);
-}
-
-@end
-
-
-
-
-#if TARGET_IPHONE_SIMULATOR 
-
-// Patching CLLocationManager to do something useful in the Xcode 4.1 / iOS 4.3 Simulator
-// https://devforums.apple.com/thread/112805?start=0&tstart=0
-
-@interface CLLocationManager (Simulator)
-@end
-
-@implementation CLLocationManager (Simulator)
-
--(void)startUpdatingLocation {
-    //Washington Monument:
-    CLLocation *fakeLocation = [[[CLLocation alloc] initWithLatitude:38.890164 longitude:-77.034588] autorelease];
     
-    [self.delegate locationManager:self
-               didUpdateToLocation:fakeLocation
-                      fromLocation:fakeLocation];    
+    self.carLocationController.car = self.userCar;
+    if (autoLocateNewCarBasedOnCurrentLocation) {
+        [self.carLocationController updateCarWithCurrentLocation];
+    }
 }
 
 @end
 
-#endif // TARGET_IPHONE_SIMULATOR
+
+
+
+

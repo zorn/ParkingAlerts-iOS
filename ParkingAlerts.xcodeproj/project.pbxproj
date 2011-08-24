@@ -44,6 +44,7 @@
 		1AEC31691405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31601405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m */; };
 		1AEC316A1405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31621405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m */; };
 		1AEC316B1405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC31641405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m */; };
+		1AFED6681405634300BD4843 /* CarLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFED6671405634300BD4843 /* CarLocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		1AEC31621405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSPersistentStore+ActiveRecord.m"; sourceTree = "<group>"; };
 		1AEC31631405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+ActiveRecord.h"; path = "ThirdPartySource/MagicalRecord/NSPersistentStoreCoordinator+ActiveRecord.h"; sourceTree = "<group>"; };
 		1AEC31641405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+ActiveRecord.m"; path = "ThirdPartySource/MagicalRecord/NSPersistentStoreCoordinator+ActiveRecord.m"; sourceTree = "<group>"; };
+		1AFED6661405634300BD4843 /* CarLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarLocationController.h; path = Source/CarLocationController.h; sourceTree = "<group>"; };
+		1AFED6671405634300BD4843 /* CarLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarLocationController.m; path = Source/CarLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				1A54927C1404073F0064D95A /* AlertListViewController.h */,
 				1A54927D1404073F0064D95A /* AlertListViewController.m */,
 				1A54927E1404073F0064D95A /* AlertListView.xib */,
+				1AFED6661405634300BD4843 /* CarLocationController.h */,
+				1AFED6671405634300BD4843 /* CarLocationController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				1AEC31691405407600CAF9F0 /* NSManagedObjectModel+ActiveRecord.m in Sources */,
 				1AEC316A1405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m in Sources */,
 				1AEC316B1405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m in Sources */,
+				1AFED6681405634300BD4843 /* CarLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
