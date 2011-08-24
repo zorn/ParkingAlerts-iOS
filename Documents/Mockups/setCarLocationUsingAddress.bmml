@@ -57,9 +57,9 @@
         <text>My%20Car</text>
       </controlProperties>
     </control>
-    <control controlID="21" controlTypeID="com.balsamiq.mockups::StickyNote" x="487" y="307" w="220" h="319" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::StickyNote" x="486" y="325" w="220" h="319" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>From%20this%20view%20you%20get%20an%20visual%20overview%20of%20the%20current%20alerts%20and%20your%20car%20location.%0A%20%0AHitting%20My%20Car%20center%20the%20map%20on%20your%20car%20location.%0A%20%0ATaping%20your%20car%20pin%20will%20show%20a%20popup.%20The%20action%20button%20on%20this%20popup%20will%20show%20an%20action%20alert%20letting%20you%20update%20the%20car%27s%20location%20via%20Current%20Location%20or%20typing%20in%20an%20address.%20You%20can%20drag%20and%20drop%20the%20pin%20as%20well.</text>
+        <text>If%20they%20user%20is%20trying%20to%20assign%20their%20car%20location%20via%20address%20we%27ll%20slide%20down%20a%20text%20entry%20field%20and%20slide%20up%20the%20iOS%20keyboard.%20%0A%20%0AWhen%20they%20hit%20set%20we%27ll%20geocode%20the%20address%2C%20reassign%20the%20car%20location%20and%20recenter/zoon%20the%20map.</text>
       </controlProperties>
     </control>
     <control controlID="23" controlTypeID="com.balsamiq.mockups::Canvas" x="716" y="628" w="232" h="133" measuredW="100" measuredH="70" zOrder="11" locked="false" isInGroup="-1"/>
@@ -106,5 +106,24 @@
         <text>less%20than%201%20min</text>
       </controlProperties>
     </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Canvas" x="218" y="429" w="224" h="31" measuredW="100" measuredH="70" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>472931</color>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Canvas" x="220" y="432" w="165" h="23" measuredW="100" measuredH="70" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::PointyButton" x="391" y="430" w="-1" h="-1" measuredW="44" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <text>Set</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::iPhoneKeyboard" x="218" y="558" w="-1" h="-1" measuredW="227" measuredH="160" zOrder="23" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
