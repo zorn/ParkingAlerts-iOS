@@ -17,6 +17,7 @@
 @property (retain) PACar *userCar;
 
 - (void)centerMapViewToLocation:(CLLocation *)location;
+- (IBAction)centerMapViewToMyCar:(id)sender;
 
 
 @end

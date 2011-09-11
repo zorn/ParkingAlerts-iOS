@@ -74,6 +74,10 @@
     [self.mapView setRegion:region animated:YES];
 }
 
+- (IBAction)centerMapViewToMyCar:(id)sender
+{
+    [self centerMapViewToLocation:[CLLocation locationWithPALocation:self.userCar.location]];
+}
 
 - (void)moreInfoForCarLocation:(id)sender
 {
