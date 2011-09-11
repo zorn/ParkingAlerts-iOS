@@ -16,5 +16,7 @@
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
 @property (retain) PACar *userCar;
 
+- (void)centerMapViewToLocation:(CLLocation *)location;
+
 
 @end

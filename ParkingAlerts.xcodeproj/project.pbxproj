@@ -20,6 +20,7 @@
 		1A760EB314041C9700B2AB5E /* PACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760EB214041C9700B2AB5E /* PACar.m */; };
 		1A760EB614041CAB00B2AB5E /* PALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A760EB514041CAB00B2AB5E /* PALocation.m */; };
 		1A760EB814041EF500B2AB5E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A760EB714041EF500B2AB5E /* CoreLocation.framework */; };
+		1ABB0CE4141D34B500FC425D /* CLLocation+ParkingAlertExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB0CE3141D34B500FC425D /* CLLocation+ParkingAlertExtensions.m */; };
 		1AE23D1013F1F5E300857D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D0F13F1F5E300857D7E /* UIKit.framework */; };
 		1AE23D1213F1F5E300857D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1113F1F5E300857D7E /* Foundation.framework */; };
 		1AE23D1413F1F5E300857D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE23D1313F1F5E300857D7E /* CoreGraphics.framework */; };
@@ -76,6 +77,8 @@
 		1A760EB414041CAB00B2AB5E /* PALocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PALocation.h; path = Source/PALocation.h; sourceTree = "<group>"; };
 		1A760EB514041CAB00B2AB5E /* PALocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PALocation.m; path = Source/PALocation.m; sourceTree = "<group>"; };
 		1A760EB714041EF500B2AB5E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1ABB0CE2141D34B500FC425D /* CLLocation+ParkingAlertExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+ParkingAlertExtensions.h"; path = "Source/CLLocation+ParkingAlertExtensions.h"; sourceTree = "<group>"; };
+		1ABB0CE3141D34B500FC425D /* CLLocation+ParkingAlertExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+ParkingAlertExtensions.m"; path = "Source/CLLocation+ParkingAlertExtensions.m"; sourceTree = "<group>"; };
 		1AE23D0B13F1F5E300857D7E /* ParkingAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE23D0F13F1F5E300857D7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AE23D1113F1F5E300857D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -208,6 +211,15 @@
 			name = MagicalRecord;
 			sourceTree = "<group>";
 		};
+		1ABB0CE6141D34C300FC425D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1ABB0CE2141D34B500FC425D /* CLLocation+ParkingAlertExtensions.h */,
+				1ABB0CE3141D34B500FC425D /* CLLocation+ParkingAlertExtensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		1AE23D0013F1F5E300857D7E = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				1A760EAA140417BD00B2AB5E /* MagicalRecord */,
+				1ABB0CE6141D34C300FC425D /* Categories */,
 				1A5492B614040BA80064D95A /* Images */,
 				1A549272140404BF0064D95A /* Models */,
 				1A549270140404A40064D95A /* Controllers */,
@@ -412,6 +425,7 @@
 				1AEC316A1405407600CAF9F0 /* NSPersistentStore+ActiveRecord.m in Sources */,
 				1AEC316B1405407600CAF9F0 /* NSPersistentStoreCoordinator+ActiveRecord.m in Sources */,
 				1AFED6681405634300BD4843 /* CarLocationController.m in Sources */,
+				1ABB0CE4141D34B500FC425D /* CLLocation+ParkingAlertExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

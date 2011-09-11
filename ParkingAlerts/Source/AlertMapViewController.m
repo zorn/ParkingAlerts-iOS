@@ -9,6 +9,9 @@
 #import "AlertMapViewController.h"
 #import "PALocation.h"
 #import "PACar.h"
+#import "CLLocation+ParkingAlertExtensions.h"
+
+#define BASE_RADIUS 0.0144927536
 
 @implementation AlertMapViewController
 
@@ -43,6 +46,7 @@
 {
     [super viewDidLoad];
     [self.mapView addAnnotation:self.userCar.location];
+    [self centerMapViewToLocation:[CLLocation locationWithPALocation:self.userCar.location]];
 }
 
 - (void)viewDidUnload
@@ -59,6 +63,18 @@
 
 #pragma mark Action methods
 
+- (void)centerMapViewToLocation:(CLLocation *)location
+{
+    MKCoordinateRegion region; 
+    region.center = location.coordinate;
+    MKCoordinateSpan span;
+    span.latitudeDelta = BASE_RADIUS / 3;
+    span.longitudeDelta = BASE_RADIUS / 3;
+    region.span = span;
+    [self.mapView setRegion:region animated:YES];
+}
+
+
 - (void)moreInfoForCarLocation:(id)sender
 {
     NSLog(@"moreInfoForCarLocation");
@@ -73,7 +89,6 @@
     }
 
     static NSString *annotationViewID = @"PALocationPinAnnotationView";
-    NSLog(@"annotation, %@", annotation);
     if ([annotation isKindOfClass:[PALocation class]]) {
         MKPinAnnotationView *pinView = (MKPinAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:annotationViewID];
         
@@ -95,6 +110,14 @@
     }
     
     return nil;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)annotationView didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState
+{
+    NSLog(@"annotationView %@, newState %u, oldState %u", annotationView, newState, oldState);
+    if (newState == MKAnnotationViewDragStateNone) {
+        [[NSManagedObjectContext defaultContext] save];
+    }
 }
 
 @end
