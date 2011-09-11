@@ -46,7 +46,7 @@
 {
     [super viewDidLoad];
     [self.mapView addAnnotation:self.userCar.location];
-    [self centerMapViewToLocation:[CLLocation locationWithPALocation:self.userCar.location]];
+    [self centerMapViewToMyCar:self];
 }
 
 - (void)viewDidUnload
@@ -77,6 +77,7 @@
 - (IBAction)centerMapViewToMyCar:(id)sender
 {
     [self centerMapViewToLocation:[CLLocation locationWithPALocation:self.userCar.location]];
+    [self.mapView selectAnnotation:self.userCar.location animated:YES];
 }
 
 - (void)moreInfoForCarLocation:(id)sender
